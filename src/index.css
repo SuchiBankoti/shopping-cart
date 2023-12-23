@@ -1,0 +1,10 @@
+*{
+  --main-color:  #f3f3f3;
+--secondary-color: black;
+--title-size: 26px;
+--subtitle-size: 16px;
+--box-radius:10px;
+--title-font-weight:600;
+font-family:sans-serif;
+margin: 0;
+}

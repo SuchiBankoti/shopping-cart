@@ -1,0 +1,29 @@
+button,.link,.icon{
+    cursor: pointer;
+}
+.link{
+    color: #fff;
+    width: inherit;
+}
+.logout-box{
+    display: flex;
+    gap:10px
+}
+.logout{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+#home{
+ text-align: center;
+ text-decoration: none;
+ font-size: var(--title-size);
+ letter-spacing: 2px;
+ font-weight: var(--title-font-weight);
+}
+button{
+    transition: box-shadow 0.2s ease-in-out;
+}
+button:hover{
+    box-shadow: 2px 2px 5px grey;
+}

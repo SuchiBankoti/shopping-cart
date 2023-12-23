@@ -1,0 +1,103 @@
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* background-color:#ffffff; */
+    height: fit-content;
+    height: 550px;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: var(--box-radius);
+    padding: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.product:hover{
+    box-shadow: 2px 2px 10px grey;
+    
+}
+.discount{
+ position: absolute;
+ top: -15px;
+ right: -15px;
+ width: 65px;
+ height: 65px;
+ border-radius: 50%;
+ background-color: var(--secondary-color);
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ font-size: var(--subtitle-size);
+ font-weight: var(--title-font-weight);
+ color: #ffffff;
+ border: 2px solid white;
+}
+
+.product-image-container{
+ width: 100%;
+ height: 250px;
+ border-radius: var(--box-radius);
+
+}
+.product-image-container:hover{
+}
+.product-thumbnail{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ border-radius: var(--box-radius);
+}
+.product-image{
+    width: 100px;
+ height: 100px;
+ object-fit: contain;
+ border-radius: var(--box-radius);
+}   
+.product-details-container{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    gap:10px;
+    
+}       
+.product-price{
+ color: rgb(252, 89, 89);
+ font-weight: var(--title-font-weight);
+ font-size:14px;
+}
+              
+            
+.product-title{
+    font-weight: var(--title-font-weight);
+    font-size: var(--title-size);
+}
+.product-description{
+  font-size: 13px;
+}
+.brand{
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.product-btn{
+    background-color: var(--secondary-color);
+    border-radius: var(--box-radius);
+    width: 100px;
+    height: 36px;
+    color: #ffffff;
+    font-weight: var(--title-font-weight);
+}   
+
+      
+@media only screen and (max-width:600px){
+    .discount{
+     width: 45px;
+     height: 45px;
+     font-size:13.5px
+    }
+    
+    
+}
