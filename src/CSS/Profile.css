@@ -43,6 +43,15 @@
     border-radius: 50%;
     border: 1px solid var(--main-color);
 }
+.user-name{
+font-size: 15px;
+text-transform: capitalize;
+margin-top: 5px;
+}
+.user-email{
+  font-size: 13.5px;
+  margin-top: 5px;
+}
 
 .trigger {
     cursor: pointer;

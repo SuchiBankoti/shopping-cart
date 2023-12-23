@@ -1,5 +1,5 @@
 import { useContext, useState } from "react"
-import "./Filter.css"
+import "../CSS/Filter.css"
 import { MyContext } from "../Store/store"
 import {FaFilter} from "react-icons/fa"
 

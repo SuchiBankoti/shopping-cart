@@ -1,5 +1,5 @@
 import {useNavigate} from "react-router-dom"
-import "./Login.css"
+import "../CSS/Login.css"
 import { useContext, useState } from "react"
 import { MyContext } from "../Store/store"
 
@@ -54,7 +54,7 @@ export default function LoginPage() {
                     <div className="login-main-page-content-sub-title">
                         Login to your account
                 </div>
-                <div className="external-link">You can use any user's credentials from <a href="https://dummyjson.com/users" target="_blank">dummyjson.com/users</a></div>
+                <div className="external-link">You can use any user's credentials from <a href="https://dummyjson.com/users" target="_blank" rel="noreferrer">dummyjson.com/users</a></div>
                 <div className="login-main-page-content-box">
                     <form onSubmit={login}>
                         <label className="login-label">Username</label>

@@ -1,5 +1,5 @@
 import { useContext, useEffect } from "react";
-import "./Navbar.css";
+import "../CSS/Navbar.css";
 import { IoIosCart, IoIosSearch } from "react-icons/io"
 import { MyContext } from "../Store/store";
 import { Link } from "react-router-dom";
@@ -13,7 +13,10 @@ export default function Navbar() {
         setSearchValue(e.target.value)
     }
     useEffect(() => {
-        startSearch(searchValue)
+        const timeout = setTimeout(() => {
+            startSearch(searchValue)
+        }, 1000)
+        return ()=>clearTimeout(timeout)
     },[searchValue,startSearch])
     return (
         <>
@@ -28,6 +31,7 @@ export default function Navbar() {
                     <IoIosCart className="cart-icon" />
                 </Link>
                 <div className="number">{cartItems.length}</div>
+                <div>Total:${cartItems.reduce((sum, product) =>(sum+=product.price),0)}</div>
             </div>
         </>
     )

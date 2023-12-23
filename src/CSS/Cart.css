@@ -17,6 +17,8 @@
  gap:20px;
  border: 1px solid black;
  height: 250px;
+ padding: 0px 10px;
+
 }
 .cart-item-img{
   width: 300px;

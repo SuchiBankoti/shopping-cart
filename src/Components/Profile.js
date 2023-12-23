@@ -1,6 +1,6 @@
 import React, { useContext, useState} from "react";
 import { ImAirplane } from "react-icons/im";
-import "./Profile.css";
+import "../CSS/Profile.css";
 import { MyContext } from "../Store/store";
 import { useNavigate } from "react-router-dom";
 
@@ -31,8 +31,8 @@ export default function Profile() {
           <div onClick={(e) => e.stopPropagation()}>
             <img src={userProfile.image ? userProfile.image : backgroundUrl} className="profile-picture" alt="Profile" />
           </div>
-          <div>{(userProfile.firstName && userProfile.lastName) ? `${userProfile.firstName} ${userProfile.lastName}` : "jon doe"}</div>
-          <div>{userProfile.email ? userProfile.email : "random@gmail.com"}</div>
+          <div className="user-name">{(userProfile.firstName && userProfile.lastName) ? `${userProfile.firstName} ${userProfile.lastName}` : "jon doe"}</div>
+          <div className="user-email">{userProfile.email ? userProfile.email : "random@gmail.com"}</div>
           <div className="border"></div>
           <div className="logout-box">
             <ImAirplane className="icon" />

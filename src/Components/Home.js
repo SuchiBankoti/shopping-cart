@@ -1,5 +1,5 @@
 import { useContext, useMemo} from "react"
-import "./Home.css"
+import "../CSS/Home.css"
 import Product from "./Product"
 import Navbar from "./Navbar"
 import { MyContext } from "../Store/store"
