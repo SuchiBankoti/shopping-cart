@@ -52,8 +52,8 @@ export default function LoginPage() {
                     src={backgroundUrl} alt="ii"></img> */}
                 {window.innerWidth > 600 ?
             
-                    <MyThreeComponent width={500} height={window.innerHeight} /> :
-                    <MyThreeComponent  width={150} height={150}  />
+                    <MyThreeComponent width={500} height={window.innerHeight} intensity={0.02} /> :
+                    <MyThreeComponent  width={150} height={150} intensity={10} />
                  }
                 </div>
                 <div className="login-main-page-content">
