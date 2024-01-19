@@ -53,7 +53,7 @@ export default function LoginPage() {
                 {window.innerWidth > 600 ?
             
                     <MyThreeComponent width={500} height={window.innerHeight} intensity={0.02} /> :
-                    <MyThreeComponent  width={150} height={150} intensity={10} />
+                    <MyThreeComponent  width={150} height={150} intensity={1} />
                  }
                 </div>
                 <div className="login-main-page-content">
