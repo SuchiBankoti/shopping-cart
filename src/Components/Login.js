@@ -2,6 +2,9 @@ import {useNavigate} from "react-router-dom"
 import "../CSS/Login.css"
 import { useContext, useState } from "react"
 import { MyContext } from "../Store/store"
+import MyThreeComponent from "./MyThreeComponent"
+
+
 
 const backgroundUrl="https://images.unsplash.com/photo-1633886036602-d05f76097e67?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 export default function LoginPage() {
@@ -42,10 +45,16 @@ export default function LoginPage() {
         setLoginData(prev=>({...prev,[e.target.name]:e.target.value}))
     }
     return (
-            <div className="login-main-page">
+        <div className="login-main-page">
+           
                 <div className="login-main-page-background">
-                    <img
-                    src={backgroundUrl} alt="ii"></img>
+                    {/* <img
+                    src={backgroundUrl} alt="ii"></img> */}
+                {window.innerWidth > 600 ?
+            
+                    <MyThreeComponent width={500} height={window.innerHeight} /> :
+                    <MyThreeComponent  width={150} height={150}  />
+                 }
                 </div>
                 <div className="login-main-page-content">
                     <div className="login-main-page-content-title">

@@ -85,9 +85,12 @@
         
        }
        .login-main-page-background{
-           width: 100vw;
+           width: 150px;
            height: 150px;
-           background-color: var(--secondary-color);
+           background-color:transparent;
+           position: absolute;
+           top:0;
+           right: 0;
            
        }
        .login-main-page-background>img{
@@ -97,7 +100,7 @@
        }
        .login-main-page-content{
            width: 100vw;
-           height: calc(100vh - 150px);
+           height: 100vh;
        }
        .login-main-page-content-box{
         width: 300px;
