@@ -10,8 +10,8 @@ const backgroundUrl="https://images.unsplash.com/photo-1633886036602-d05f76097e6
 export default function LoginPage() {
     const{setUserProfile}=useContext(MyContext)    
     const [loginData, setLoginData] = useState({
-        username: "",
-        password:""
+        username: "atuny0",
+        password:"9uQFF1Lh"
     })
     const[errMsg,setErrMsg]=useState("")
     const navigate=useNavigate()
